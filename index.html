@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitale Kompetenzen - Bereiche 4-5 Kompakt</title>
+    <style>
+        @page {
+            size: 24cm 16cm;
+            margin: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 7pt;
+            line-height: 1.2;
+            width: 24cm;
+            height: 16cm;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 8px;
+            height: 100%;
+        }
+        
+        .kompetenzbereich {
+            border-radius: 4px;
+            overflow: auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h2 {
+            color: white;
+            padding: 8px;
+            margin: 0;
+            font-size: 10pt;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .datenverwaltung h2 { background-color: #8e44ad; }
+        .kommunikation h2 { background-color: #e67e22; }
+        
+        .description {
+            background-color: #f9f9f9;
+            padding: 6px;
+            font-style: italic;
+            font-size: 7pt;
+            border-left: 4px solid;
+            margin-bottom: 4px;
+        }
+        
+        .datenverwaltung .description { border-left-color: #8e44ad; }
+        .kommunikation .description { border-left-color: #e67e22; }
+        
+        .content {
+            padding: 6px;
+            background-color: white;
+            flex: 1;
+            overflow-y: auto;
+        }
+        
+        h3 {
+            margin: 8px 0 4px 0;
+            color: #444;
+            background-color: #e9e9e9;
+            padding: 3px 6px;
+            border-radius: 2px;
+            font-size: 8pt;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 8px;
+            font-size: 7pt;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 3px;
+            vertical-align: top;
+        }
+        
+        th {
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+        
+        th:nth-child(1) { width: 55%; text-align: left; }
+        th:nth-child(2) { width: 20%; }
+        th:nth-child(3) { width: 12.5%; }
+        th:nth-child(4) { width: 12.5%; }
+        
+        td:nth-child(1) { width: 55%; }
+        td:nth-child(2) { width: 20%; text-align: left; }
+        td:nth-child(3) { width: 12.5%; text-align: center; }
+        td:nth-child(4) { width: 12.5%; text-align: center; }
+        
+        /* Datenverwaltung - Violetttöne */
+        .datenverwaltung th:nth-child(1) { background-color: #8e44ad; }
+        .datenverwaltung th:nth-child(2) { background-color: #9855b8; }
+        .datenverwaltung th:nth-child(3) { background-color: #a266c3; }
+        .datenverwaltung th:nth-child(4) { background-color: #ac77ce; }
+        .datenverwaltung td:nth-child(1) { background-color: #e8daef; }
+        .datenverwaltung td:nth-child(2) { background-color: #ede1f2; }
+        .datenverwaltung td:nth-child(3) { background-color: #f2e8f5; }
+        .datenverwaltung td:nth-child(4) { background-color: #f7eff8; }
+        
+        /* Kommunikation - Orangetöne */
+        .kommunikation th:nth-child(1) { background-color: #e67e22; }
+        .kommunikation th:nth-child(2) { background-color: #e98e39; }
+        .kommunikation th:nth-child(3) { background-color: #ec9e50; }
+        .kommunikation th:nth-child(4) { background-color: #efae67; }
+        .kommunikation td:nth-child(1) { background-color: #fae5d3; }
+        .kommunikation td:nth-child(2) { background-color: #fbeadb; }
+        .kommunikation td:nth-child(3) { background-color: #fcefe3; }
+        .kommunikation td:nth-child(4) { background-color: #fdf4eb; }
+        
+        .konzept-symbol {
+            font-size: 9pt;
+            font-weight: bold;
+        }
+        
+        .tool-examples {
+            font-size: 6pt;
+            font-style: italic;
+            color: #555;
+            line-height: 1.1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- DATENVERWALTUNG UND DATENSICHERHEIT -->
+        <div class="kompetenzbereich datenverwaltung">
+            <h2>DATENVERWALTUNG UND DATENSICHERHEIT</h2>
+            <div class="description">
+                Verantwortungsvoller Umgang mit digitalen Daten sowie die Fähigkeit, personenbezogene und sensible Informationen im schulischen Kontext zu schützen. Kenntnisse über rechtliche Grundlagen, technische Schutzmassnahmen und ethische Aspekte des Datenschutzes.
+            </div>
+            <div class="content">
+                <h3>4.1 Datenschutz und Datensicherheit</h3>
+                <table>
+                    <tr>
+                        <th>Erwartete Kompetenz</th>
+                        <th>Beispiel-Tools/Geräte</th>
+                        <th>IKT-Konzept</th>
+                        <th>Päd.-did. Konzept</th>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson hält die rechtlichen Grundlagen zum Datenschutz ein</td>
+                        <td><div class="tool-examples">DSGVO-Guidelines, Schulrichtlinien</div></td>
+                        <td><div class="konzept-symbol">KR 🔍</div></td>
+                        <td><div class="konzept-symbol">PLL 👥</div></td>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson kann sichere Passwörter setzen und Zugangsdaten verwalten</td>
+                        <td><div class="tool-examples">1Password, Bitwarden, 2FA-Apps</div></td>
+                        <td><div class="konzept-symbol">DS 🔒</div></td>
+                        <td><div class="konzept-symbol">PU 📚</div></td>
+                    </tr>
+                </table>
+
+                <h3>4.2 Datenmanagement</h3>
+                <table>
+                    <tr>
+                        <th>Erwartete Kompetenz</th>
+                        <th>Beispiel-Tools/Geräte</th>
+                        <th>IKT-Konzept</th>
+                        <th>Päd.-did. Konzept</th>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson kann digitale Daten strukturieren, organisieren und zugänglich machen</td>
+                        <td><div class="tool-examples">OneDrive, SharePoint, Ordnerstrukturen</div></td>
+                        <td><div class="konzept-symbol">RE 💚</div></td>
+                        <td><div class="konzept-symbol">PLK 🏫</div></td>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson kann KI für das Datenmanagement einsetzen</td>
+                        <td><div class="tool-examples">ChatGPT, Automatisierung, Kategorisierung</div></td>
+                        <td><div class="konzept-symbol">RE 💚</div></td>
+                        <td><div class="konzept-symbol">PDM 🛠️</div></td>
+                    </tr>
+                </table>
+
+                <h3>4.3 Rechtliche und ethische Aspekte</h3>
+                <table>
+                    <tr>
+                        <th>Erwartete Kompetenz</th>
+                        <th>Beispiel-Tools/Geräte</th>
+                        <th>IKT-Konzept</th>
+                        <th>Päd.-did. Konzept</th>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson wendet das Urheberrecht an</td>
+                        <td><div class="tool-examples">Creative Commons, Lizenzangaben</div></td>
+                        <td><div class="konzept-symbol">KR 🔍</div></td>
+                        <td><div class="konzept-symbol">PU 📚</div></td>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson überprüft KI-Outputs und entscheidet wie er eingesetzt wird</td>
+                        <td><div class="tool-examples">ChatGPT, AI-Detektoren, Fact-Checking</div></td>
+                        <td><div class="konzept-symbol">KR 🔍</div></td>
+                        <td><div class="konzept-symbol">PDM 🛠️</div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- KOMMUNIKATION UND KOLLABORATION -->
+        <div class="kompetenzbereich kommunikation">
+            <h2>KOMMUNIKATION UND KOLLABORATION</h2>
+            <div class="description">
+                Alle Fähigkeiten zur digitalen Interaktion, Zusammenarbeit und Kommunikation. Lehrpersonen nutzen digitale Medien für den professionellen Austausch mit Kollegium, Lernenden und externen Partnern und gestalten kollaborative Lernprozesse digital.
+            </div>
+            <div class="content">
+                <h3>5.1 Digitale Kommunikation</h3>
+                <table>
+                    <tr>
+                        <th>Erwartete Kompetenz</th>
+                        <th>Beispiel-Tools/Geräte</th>
+                        <th>IKT-Konzept</th>
+                        <th>Päd.-did. Konzept</th>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson nutzt digitale Kommunikationstools für den Austausch mit Kollegium und Lernenden</td>
+                        <td><div class="tool-examples">MS Teams, E-Mail, Slack</div></td>
+                        <td><div class="konzept-symbol">KN 🌐</div></td>
+                        <td><div class="konzept-symbol">PL 🎓</div></td>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson wendet Netiquette-Regeln in der digitalen Kommunikation an</td>
+                        <td><div class="tool-examples">Chat-Regeln, E-Mail-Etikette</div></td>
+                        <td><div class="konzept-symbol">MG 🛠️</div></td>
+                        <td><div class="konzept-symbol">PLL 👥</div></td>
+                    </tr>
+                </table>
+
+                <h3>5.2 Digitale Kollaboration</h3>
+                <table>
+                    <tr>
+                        <th>Erwartete Kompetenz</th>
+                        <th>Beispiel-Tools/Geräte</th>
+                        <th>IKT-Konzept</th>
+                        <th>Päd.-did. Konzept</th>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson nutzt kollaborative Dokumente für die gemeinsame Arbeit</td>
+                        <td><div class="tool-examples">Google Docs, OneDrive, Padlet</div></td>
+                        <td><div class="konzept-symbol">KA 🤝</div></td>
+                        <td><div class="konzept-symbol">PU 📚</div></td>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson koordiniert digitale Gruppenarbeiten und Teamprojekte</td>
+                        <td><div class="tool-examples">Trello, Asana, MS Project</div></td>
+                        <td><div class="konzept-symbol">MG 🛠️</div></td>
+                        <td><div class="konzept-symbol">PDM 🛠️</div></td>
+                    </tr>
+                </table>
+
+                <h3>5.3 Digitale Partizipation</h3>
+                <table>
+                    <tr>
+                        <th>Erwartete Kompetenz</th>
+                        <th>Beispiel-Tools/Geräte</th>
+                        <th>IKT-Konzept</th>
+                        <th>Päd.-did. Konzept</th>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson beantwortet Nachrichten zeitnah und professionell</td>
+                        <td><div class="tool-examples">E-Mail, Teams-Chat, Benachrichtigungen</div></td>
+                        <td><div class="konzept-symbol">RE 💚</div></td>
+                        <td><div class="konzept-symbol">PLK 🏫</div></td>
+                    </tr>
+                    <tr>
+                        <td>Die Lehrperson verfolgt Informationen in Teams und OpenOlat aktiv</td>
+                        <td><div class="tool-examples">MS Teams, OpenOlat, Notifications</div></td>
+                        <td><div class="konzept-symbol">KN 🌐</div></td>
+                        <td><div class="konzept-symbol">PLK 🏫</div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
